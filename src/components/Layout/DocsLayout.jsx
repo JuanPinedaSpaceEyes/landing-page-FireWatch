@@ -6,16 +6,12 @@ import { useNavigation } from "../../hooks/useNavigation.js";
 import { useState } from "react";
 
 export default function DocsLayout() {
-  const {
-    isSidebarOpen,
-    setIsSidebarOpen,
-  } = useNavigation();
+  const { isSidebarOpen, setIsSidebarOpen } = useNavigation();
 
   const [isSideBarMobileOpen, setIsSideBarMobileOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans">
-
       <Header onMobileMenuClick={() => setIsSideBarMobileOpen((v) => !v)} />
 
       <Sidebar
@@ -27,10 +23,7 @@ export default function DocsLayout() {
         widthClass="w-80 max-w-[85%]"
       />
 
-
-
       <div className="flex flex-1 min-h-0 flex-col lg:flex-row">
-
         {isSidebarOpen && (
           <div className="w-full lg:hidden border-b">
             <Sidebar onSectionChange={() => setIsSidebarOpen(false)} />
@@ -43,13 +36,10 @@ export default function DocsLayout() {
           </div>
         </aside>
 
-
         <main className="flex-1 min-w-0 min-h-0 px-4 sm:px-6 lg:px-8 py-6 overflow-auto">
           <Outlet />
         </main>
       </div>
-
-
       <Footer />
     </div>
   );
