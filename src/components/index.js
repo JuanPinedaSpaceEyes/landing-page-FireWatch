@@ -31,7 +31,7 @@ export const logos = [
   { src: "/logos/aws-nb.png", alt: "The Weather Channel" }
 ];
 
-export const androidImage = { src: "/images/androidImage.webp", alt: "androidImage" }
+export const android = { src: "/images/android.png", alt: "android" }
 export const iosImage = { src: "/images/iphone.png", alt: "iosImage" }
 export const laptopImage = { src: "/images/laptop.png", alt: "laptopImage" }
 
