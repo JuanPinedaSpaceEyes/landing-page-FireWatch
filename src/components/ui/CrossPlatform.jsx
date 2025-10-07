@@ -1,7 +1,7 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 import { appleImage, googleImage } from "..";
 import * as motion from "motion/react-client";
-import { androidImage, iosImage, laptopImage } from "..";
+import { android, iosImage, laptopImage } from "..";
 export default function CrossPlatform({
   headline = "Cross-platform compatibility ",
   subtitle = "Access FireWatch seamlessly from desktop, tablet, or mobile devices. Its cross-platform design ensures reliable wildfire monitoring anytime, anywhere.",
@@ -80,8 +80,8 @@ export default function CrossPlatform({
                 transition={{ duration: 0.7, ease: "easeOut" }}
               />
               <MotionImg
-                src={androidImage.src}
-                alt={androidImage.alt}
+                src={android.src}
+                alt={android.alt}
                 className="absolute left-2 bottom-3 w-[38%] sm:w-[36%] md:w-[34%] lg:w-[32%] object-contain -rotate-6 origin-bottom drop-shadow-xl"
                 initial={{ opacity: 0, y: 30, rotate: -10 }}
                 whileInView={{ opacity: 1, y: 0, rotate: -6 }}
